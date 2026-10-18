@@ -1,0 +1,30 @@
+name: Backtest
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "oro_backtest.py"
+      - ".github/workflows/backtest.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance pandas numpy
+      - run: python oro_backtest.py --out resultados | tee resultados/resumen.txt
+      - name: Guardar resultados en el repo
+        run: |
+          git config user.name "oro-bot"
+          git config user.email "oro-bot@users.noreply.github.com"
+          git add resultados
+          git commit -m "Resultados backtest $(date -u +%F)" || echo "Sin cambios"
+          git push
