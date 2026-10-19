@@ -1,0 +1,8 @@
+✓ Oro (GC=F): 6498 días
+✓ Plata (SI=F): 6500 días
+✓ Platino (PL=F): 5977 días
+✓ GLD (ETF): 5452 días
+
+Oro base: 359 trades | win 48.7 % | exp 0.066 R | PF 1.22 | DD 7.8 R
+VEREDICTO: NO PASA
+Informe: informe_backtest.html · Operaciones: operaciones_backtest.csv
