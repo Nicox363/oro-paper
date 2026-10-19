@@ -65,6 +65,7 @@ class Reglas:
     dias_senal: tuple = (0, 1, 2)      # 0=lunes ... 4=viernes
     max_por_semana: int = 1
     dias_toque: int = 3
+    solo_largos: bool = False
 
 
 BASE = Reglas("A_base")
@@ -138,6 +139,8 @@ def backtest(d, reglas, coste_pct, activo):
             alcista = bajista = True
         largo = alcista and np.any(l[ini:i + 1] <= ema20[ini:i + 1]) and c[i] > h[i - 1]
         corto = bajista and np.any(h[ini:i + 1] >= ema20[ini:i + 1]) and c[i] < l[i - 1]
+        if reglas.solo_largos:
+            corto = False
         # la entrada (día siguiente) debe caer en la misma semana; señal ambigua -> fuera
         if largo == corto or semana[i + 1] != semana[i]:
             i += 1

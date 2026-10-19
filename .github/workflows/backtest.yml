@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "oro_backtest.py"
+      - "oro_hipotesis.py"
       - ".github/workflows/backtest.yml"
 
 permissions:
@@ -20,7 +21,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install yfinance pandas numpy
-      - run: python oro_backtest.py --out resultados | tee resultados/resumen.txt
+      - run: mkdir -p resultados/hipotesis && python oro_hipotesis.py --out resultados/hipotesis | tee resultados/hipotesis/resumen.txt
       - name: Guardar resultados en el repo
         run: |
           git config user.name "oro-bot"
