@@ -1,0 +1,26 @@
+✓ Oro (GC=F): 315 meses
+✓ Plata (SI=F): 315 meses
+✓ Platino (PL=F): 308 meses
+✓ GLD (ETF): 264 meses
+
+H6_12m   total CAGR=  9.72% vol= 15.1% Sharpe=0.69 DD= 28.3% peor=  -7.2% neg=12/26
+H6_12m   is    CAGR=  7.14% vol= 14.5% Sharpe=0.55 DD= 28.3% peor= -10.1% neg=11/23
+H6_12m   oos   CAGR= 30.07% vol= 18.3% Sharpe=1.55 DD= 23.0% peor=  -3.3% neg=1/4
+B&H      total CAGR= 11.45% vol= 16.9% Sharpe=0.73 DD= 42.0% peor= -28.2% neg=7/26
+B&H      is    CAGR=  9.07% vol= 16.6% Sharpe=0.61 DD= 42.0% peor= -28.2% neg=6/23
+B&H      oos   CAGR= 30.07% vol= 18.3% Sharpe=1.55 DD= 23.0% peor=  -3.3% neg=1/4
+sens_6m  total CAGR=  9.14% vol= 13.7% Sharpe=0.71 DD= 23.1% peor= -11.9% neg=8/26
+sens_6m  is    CAGR=  7.17% vol= 13.1% Sharpe=0.60 DD= 21.6% peor= -11.9% neg=7/23
+sens_6m  oos   CAGR= 24.71% vol= 17.1% Sharpe=1.39 DD= 23.1% peor=  -7.1% neg=1/4
+sens_9m  total CAGR=  8.38% vol= 14.7% Sharpe=0.62 DD= 33.4% peor= -14.2% neg=11/26
+sens_9m  is    CAGR=  5.70% vol= 14.0% Sharpe=0.47 DD= 33.4% peor= -14.2% neg=10/23
+sens_9m  oos   CAGR= 29.92% vol= 18.3% Sharpe=1.54 DD= 23.0% peor=  -3.7% neg=1/4
+CTRL Plata (SI=F)    H6 CAGR=6.75% Sh=0.38 DD=72.2% | B&H CAGR=11.01% Sh=0.49 DD=71.6%
+CTRL Platino (PL=F)  H6 CAGR=1.46% Sh=0.18 DD=76.9% | B&H CAGR=4.21% Sh=0.29 DD=66.4%
+CTRL GLD (ETF)       H6 CAGR=8.58% Sh=0.61 DD=30.1% | B&H CAGR=10.31% Sh=0.65 DD=42.9%
+Invertido 76% · cambios 31 · señal reciente [('2026-05', np.float64(0.3965155937786118)), ('2026-06', np.float64(0.2209390390954935)), ('2026-07', np.float64(0.24711528631552926)), ('2026-08', np.float64(0.27456553440764186)), ('2026-09', np.float64(0.08094088817846146)), ('2026-10', np.float64(0.05016889778556233))]
+  ✘ Sharpe IS ≥ B&H: 0,55 vs 0,61
+  ✘ Max DD IS ≤ 2/3 de B&H: -28,3 % vs -42,0 %
+  ✔ CAGR OOS > 0: 30,1 %
+  ✘ Sharpe ≥ B&H en ≥ 2 de 3 controles: 0/3
+VEREDICTO: NO PASA
