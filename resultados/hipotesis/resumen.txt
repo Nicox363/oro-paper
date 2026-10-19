@@ -1,0 +1,39 @@
+✓ Oro (GC=F): 6498 días
+✓ Plata (SI=F): 6500 días
+✓ Platino (PL=F): 5978 días
+✓ GLD (ETF): 5452 días
+
+H1_lun_vie           IS n=1070 exp=+0.051 t= 1.46 R/año=+2.37 DD= 34.7 | OOS n=146 exp=+0.164 | NO PASA
+    ✘ t-stat IS ≥ 2,5: 1,46
+    ✔ R/año IS ≥ 2,0: 2,37
+    ✘ Max DD IS ≤ 15 R: 34,7
+    ✔ Expectativa OOS > 0: 0,164
+    ✔ Positiva en GLD y en ≥1 de plata/platino: GLD sí · 1/2
+H2_jue_vie           IS n=1118 exp=+0.041 t= 2.29 R/año=+2.01 DD= 15.3 | OOS n=148 exp=+0.063 | NO PASA
+    ✘ t-stat IS ≥ 2,5: 2,29
+    ✔ R/año IS ≥ 2,0: 2,01
+    ✘ Max DD IS ≤ 15 R: 15,3
+    ✔ Expectativa OOS > 0: 0,063
+    ✔ Positiva en GLD y en ≥1 de plata/platino: GLD sí · 1/2
+    ✘ Bate al benchmark H1 (R/año IS): 2,01 vs 2,37
+H3_jue_vie_12m       IS n= 778 exp=+0.039 t= 1.86 R/año=+1.33 DD=  9.3 | OOS n=148 exp=+0.063 | NO PASA
+    ✘ t-stat IS ≥ 2,5: 1,86
+    ✘ R/año IS ≥ 2,0: 1,33
+    ✔ Max DD IS ≤ 15 R: 9,3
+    ✔ Expectativa OOS > 0: 0,063
+    ✔ Positiva en GLD y en ≥1 de plata/platino: GLD sí · 1/2
+    ✘ Bate al benchmark H1 (R/año IS): 1,33 vs 2,37
+H4_mar_vie_12m       IS n= 820 exp=+0.082 t= 2.19 R/año=+2.95 DD= 21.1 | OOS n=159 exp=+0.189 | NO PASA
+    ✘ t-stat IS ≥ 2,5: 2,19
+    ✔ R/año IS ≥ 2,0: 2,95
+    ✘ Max DD IS ≤ 15 R: 21,1
+    ✔ Expectativa OOS > 0: 0,189
+    ✔ Positiva en GLD y en ≥1 de plata/platino: GLD sí · 1/2
+    ✔ Bate al benchmark H1 (R/año IS): 2,95 vs 2,37
+H5_retroceso_largos  IS n= 193 exp=+0.077 t= 1.24 R/año=+0.65 DD=  9.1 | OOS n= 31 exp=+0.323 | NO PASA
+    ✘ t-stat IS ≥ 2,5: 1,24
+    ✘ R/año IS ≥ 2,0: 0,65
+    ✔ Max DD IS ≤ 15 R: 9,1
+    ✔ Expectativa OOS > 0: 0,323
+    ✔ Positiva en GLD y en ≥1 de plata/platino: GLD sí · 1/2
+    ✘ Bate al benchmark H1 (R/año IS): 0,65 vs 2,37
